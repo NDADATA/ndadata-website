@@ -1,31 +1,41 @@
-/* CSS de NDA DATA - Site vitrine */
+/* style.css - NDA DATA */
+
+/* Réinitialisation de base */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Corps de page */
 body {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
     color: #333;
 }
 
+/* En-tête */
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #004080;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
+header p {
+    font-size: 1.1rem;
+}
+
+/* Navigation (si besoin) */
 nav {
-    background-color: #0055a5;
-    padding: 10px;
+    background: #003366;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -33,74 +43,59 @@ nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-.section {
+/* Section principale */
+main {
     padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.section-light {
-    background-color: #ffffff;
+/* Section fade-in (animation au scroll) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.section-dark {
-    background-color: #e9ecef;
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
+/* Cartes de services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-h2 {
-    color: #003366;
-    margin-bottom: 15px;
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+.service-card:hover {
+    transform: scale(1.03);
 }
 
+/* Pied de page */
 footer {
-    background-color: #003366;
+    background-color: #004080;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .section {
-        padding: 20px 10px;
-    }
+    padding: 20px;
+    margin-top: 40px;
 }

@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NDA DATA – Analyse & Automatisation</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NDA DATA - Data Analytics & Automation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Logo NDA DATA" class="logo" />
+      <h1>NDA DATA</h1>
+      <p>Data Analytics & Automation Solutions</p>
+    </header>
 
-  <!-- En-tête -->
-  <header>
-    <div class="container header-content">
-      <img src="images/ndadata_logo.png" alt="Logo NDA DATA" class="logo" />
-      <nav>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Réalisations</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#testimonials">Témoignages</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <img src="https://source.unsplash.com/1600x400/?data,technology" class="banner" alt="banner" />
+
+    <main>
+      <!-- À propos -->
+      <section id="about">
+        <h2>À propos de NDA DATA</h2>
+        <p>NDA DATA est une micro-entreprise fondée par Jean-Marc MINTSA, Data Analyst spécialisé en automatisation et traitement de données...</p>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+          <div class="card"><h3>Analyse de données</h3><p>Transformation de données brutes...</p></div>
+          <div class="card"><h3>Automatisation de reporting</h3><p>Création de rapports automatiques...</p></div>
+          <div class="card"><h3>Outils Excel sur mesure</h3><p>Fichiers Excel dynamiques...</p></div>
+          <div class="card"><h3>Gestion de base de données</h3><p>Nettoyage, structuration, SQL...</p></div>
+          <div class="card"><h3>Formation / coaching</h3><p>Sessions personnalisées Excel, VBA...</p></div>
+        </div>
+      </section>
+
+      <!-- Réalisations -->
+      <section id="projects">
+        <h2>Réalisations</h2>
+        <div class="projects">
+          <div class="card"><h4>Dashboard RH interactif</h4><p>Suivi automatisé des effectifs...</p></div>
+          <div class="card"><h4>Reporting Finance consolidé</h4><p>Automatisation Excel avec PDF...</p></div>
+        </div>
+      </section>
+
+      <!-- Expertise -->
+      <section id="expertise">
+        <h2>Expertise & Certifications</h2>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>DUT Statistique & Informatique Décisionnelle – Nancy</li>
+          <li>Licence MIASHS – Université de Lorraine</li>
+          <li>Excel, VBA, SAS, SQL, automatisation...</li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </section>
 
-  <!-- Section Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Libérez la valeur de vos données</h1>
-      <p>Automatisation, reporting, outils sur mesure – NDA DATA vous accompagne.</p>
-      <a href="#contact" class="btn">Discutons de votre projet</a>
-    </div>
-  </section>
+      <!-- Témoignages -->
+      <section id="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonials">
+          <div class="card"><em>“15h gagnées par mois grâce aux outils NDA DATA.”</em><br><strong>— Chef de projet</strong></div>
+          <div class="card"><em>“Travail propre, efficace, très clair.”</em><br><strong>— Consultante RH</strong></div>
+          <div class="card"><em>“Livrable bien documenté, top accompagnement.”</em><br><strong>— Fondateur startup</strong></div>
+        </div>
+      </section>
 
-  <!-- Services -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Nos services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Analyse de données</h3>
-          <p>Comprenez, explorez et valorisez vos données avec des analyses sur mesure.</p>
-        </div>
-        <div class="card">
-          <h3>Automatisation de processus</h3>
-          <p>Gagnez du temps grâce à des solutions automatisées avec Excel, VBA, ou Google Cloud.</p>
-        </div>
-        <div class="card">
-          <h3>Outils métiers personnalisés</h3>
-          <p>Conception d’outils adaptés à votre activité : tableaux de bord, simulateurs, etc.</p>
-        </div>
+      <!-- FAQ -->
+      <section id="faq">
+        <h2>FAQ</h2>
+        <p><strong>Travaillez-vous à distance ?</strong> Oui, visioconférences régulières.</p>
+        <p><strong>Pouvez-vous former une équipe ?</strong> Oui, formations pratiques et ciblées.</p>
+        <p><strong>Travaillez-vous avec des particuliers ?</strong> Uniquement en contexte pro.</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>📧 Email : <strong>ndadata.contact@gmail.com</strong><br>📞 Téléphone : <strong>06 66 46 47 13</strong></p>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre adresse email" required />
+          <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <!-- Liens sociaux avec icônes -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">LinkedIn</a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">Facebook</a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">GitHub</a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">WhatsApp</a>
       </div>
-    </div>
-  </section>
-
-  <!-- À propos -->
-  <section id="apropos" class="section section-light">
-    <div class="container">
-      <h2>À propos de NDA DATA</h2>
-      <p>Jean-Marc MINTSA, Data Analyst indépendant, met son expertise au service des entreprises depuis plus de 10 ans dans les domaines de la finance, de la recherche clinique et de l’industrie. NDA DATA est une micro-entreprise créée pour vous offrir des solutions agiles, efficaces et durables.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Discutons de vos besoins et voyons comment NDA DATA peut vous accompagner.</p>
-      <a href="mailto:contact@ndadata.fr" class="btn">Envoyer un email</a>
-    </div>
-  </section>
-
-  <!-- Pied de page -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 NDA DATA – SIREN 879 806 115 | Site conçu par Jean-Marc MINTSA</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+      <div class="legal">
+        © 2025 NDA DATA — SIRET : 87980611500025 — Tous droits réservés<br />
+        Mentions légales disponibles sur demande
+      </div>
+    </footer>
+  </body>
 </html>

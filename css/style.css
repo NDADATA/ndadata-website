@@ -1,101 +1,124 @@
-/* style.css - NDA DATA */
-
-/* Réinitialisation de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corps de page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* En-tête */
 header {
-    background-color: #004080;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #007baf;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
+.logo {
+  max-height: 80px;
+  margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.1rem;
-}
-
-/* Navigation (si besoin) */
 nav {
-    background: #003366;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #005f87;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-bottom: 3px solid #007baf;
 }
 
-/* Section principale */
-main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
+section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Section fade-in (animation au scroll) */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.services, .projects, .testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Cartes de services */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.service-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: scale(1.03);
-}
-
-/* Pied de page */
 footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  background-color: #003d5c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
+}
+
+.legal {
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007baf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
